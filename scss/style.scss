@@ -1,0 +1,25 @@
+body {
+  background-color: white;
+  font-family: helvetica;
+}
+
+div {
+  position: static;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px;
+  font: 11px helvetica;
+  border: 4px solid black;
+  pointer-events: none;
+  background-color: white;
+  //permet de définir la "case" div mais l'image ne s'adapte pas :   width: 300px;
+}
+
+.salle {
+  border: 1px solid black;
+}
+
+.imgExpo {
+    padding: 5px;
+    width: 350px;
+}
