@@ -121,5 +121,5 @@ let cercles = d3.select("svg")
          .duration(200)
          .style("opacity", 1);
        //div.html(d.illustration+"<br /><br />"+"<i>"+d.titre+"</i><br /><br /><b>"+d.artiste+"</b><br /><br />"+d.description)
-       div.html(`<img src='${d.illustration}'><br /><br /><i>${d.titre}</i><br /><br /><b>${d.artiste}</b><br /><br />${d.description}<br /><br />Salle ${d.salle}`)
+       div.html(`<img src='${d.illustration}'><br /><br /><i>${d.titre}</i><br /><br /><b>${d.artiste}</b><br /><br />${d.description}<br /><br />Salle ${d.salle}<br /><br />class="imgExpo"`)
        })

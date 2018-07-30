@@ -12,6 +12,11 @@ div {
   border: 4px solid black;
   pointer-events: none;
   background-color: white;
+  
+  width: 300px
+  /*
+  Pour fixer la casse de fond
+  */
 }
 
 .salle {
@@ -20,5 +25,4 @@ div {
 
 .imgExpo {
   padding: 5px;
-  width: 350px;
-}
+  width: 300px;}
