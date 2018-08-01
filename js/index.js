@@ -27,7 +27,7 @@ let oeuvres = [
 {"titre" : "Choir Boys, œuvre à droite, telle que présentée à la Deste Foundation", "illustration" : "https://deste.gr/wp-content/uploads/2013/07/1992_PH-Inst-24_b.jpg", "artiste" : "Martin Honert", "description" : "", "date" : "1988-89", "exposition" : 2, "salle" : "2"},
 
 {"titre" : "Escalier", "illustration" : "", "artiste" : "", "description" : "", "date" : "", "exposition" : 6, "salle" : "Escalier"},
-{"titre" : "Radia Drill", "illustration" : "http://www.artinamericamagazine.com/files/2016/10/06/img-matthew-barney-lookout_16580229330.jpg_x_550x413_c.jpg", "artiste" : "Matthew Barney", "description" : "Le travail de Matthew Barney est intéressant au regard sur le <i>post-human</i>, il joue sur le corps, son genre et sa sexualisation, notamment au travers des vidéos qu'il réalise entre 1994 et 2002,<i> Cremaster Cycle</i>.", "date" : "1991", "exposition" : 0, "salle" : "Escalier"},
+{"titre" : "Radia Drill", "illustration" : "http://www.artinamericamagazine.com/files/2016/10/06/img-matthew-barney-lookout_16580229330.jpg_x_550x413_c.jpg", "artiste" : "Matthew Barney", "description" : "Le travail de Matthew Barney s'articule autour de la figure du <i>post-human</i>, il joue sur le corps, son genre et sa sexualisation, notamment au travers des vidéos qu'il réalise entre 1994 et 2002,<i> Cremaster Cycle</i>.", "date" : "1991", "exposition" : 0, "salle" : "Escalier"},
 {"titre" : "Pin-Ups (œuvres telles que présentée à la Deste Foundation)", "illustration" : "http://www.deitch.com/content/curatorial/post-human/1992_PH-Inst--%282%29.jpg", "artiste" : "Christian Marclay", "description" : "Dans ces œuvres, Christian Marclay présente les corps décomposés et recomposés de figure de la pop. Dans l'exposition l'œuvre est présentée au-dessus des escaliers.", "date" : "1991", "exposition" : 5, "salle" : "Escalier"},
 {"titre" : "Doorsiana (œuvres telles que présentée à la Deste Foundation)", "illustration" : "http://www.deitch.com/content/curatorial/post-human/1992_PH-Inst--%282%29.jpg", "artiste" : "Christian Marclay", "description" : "", "date" : "1991", "exposition" : 5, "salle" : "Escalier"},
 {"titre" : "", "illustration" : "", "artiste" : "Erika Rothenberg", "description" : "", "date" : "", "exposition" : 0,  "salle" : "Escalier"},
@@ -121,5 +121,5 @@ let cercles = d3.select("svg")
          .duration(200)
          .style("opacity", 1);
        //div.html(d.illustration+"<br /><br />"+"<i>"+d.titre+"</i><br /><br /><b>"+d.artiste+"</b><br /><br />"+d.description)
-       div.html(`<img src='${d.illustration}' class='imgExpo'><br /><br /><i>${d.titre}</i><br /><br /><b>${d.artiste}</b><br /><br />${d.description}<br /><br />Salle ${d.salle}`)
+       div.html(`<img src='${d.illustration}' class='imgExpo'><br /><br />${d.artiste}<br /><br /><i>${d.titre}</i><br /><br />${d.description}Salle ${d.salle}`)
        })

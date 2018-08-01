@@ -1,6 +1,7 @@
 body {
   background-color: white;
-  font-family: helvetica;
+  font: 200% helvetica;
+  text-align: center;
 }
 
 div {
@@ -8,12 +9,12 @@ div {
   text-align: center;
   line-height: 20px;
   padding: 10px;
-  font: 11px helvetica;
+  font: 100% helvetica;
   border: 4px solid black;
   pointer-events: none;
   background-color: white;
-  
-  width: 300px
+  width: 90%;
+  margin: auto;
   /*
   Pour fixer la casse de fond
   */
@@ -24,5 +25,23 @@ div {
 }
 
 .imgExpo {
-  padding: 5px;
-  width: 300px;}
+ margin: auto;
+ width: 90%;
+}
+
+.divPlan {
+  position: static;
+  line-height: 20px;
+  padding: 10px;
+  font: 100% helvetica;
+  border: 1px solid white;
+  pointer-events: none;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+}
+
+.plan {
+  margin: auto;
+  width: 100%;
+}
