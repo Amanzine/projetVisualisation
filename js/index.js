@@ -123,3 +123,32 @@ let cercles = d3.select("svg")
        //div.html(d.illustration+"<br /><br />"+"<i>"+d.titre+"</i><br /><br /><b>"+d.artiste+"</b><br /><br />"+d.description)
        div.html(`<img src='${d.illustration}' class='imgExpo'><br /><br />${d.artiste}<br /><br /><i>${d.titre}</i><br /><br />${d.description}Salle ${d.salle}`)
        })
+
+//Mansory ?
+
+var j$ = jQuery,
+    $mContainer = j$(".tooltip"),
+    $filterButton = j$(".zoneClic"),
+    $params = {
+      itemSelector: ".imgExpo",
+      filtersGroupSelector:".filters"
+    // Uncomment below to set the selectorType to use <ul> instead of inputs
+    // selectorType: "list"
+    };
+
+// After the page is loaded
+j$(window).load(function() { 
+  // Do mansonry with filtering 
+  $mContainer.multipleFilterMasonry($params);
+  // Show articles with fadein
+  $mContainer.find("imgExpo").animate({
+      "opacity":1
+    }, 1200);
+  // Hide loading message
+  $loadingMessage.fadeOut();
+  
+  // Change the filtering button(label) status 
+  $filterButton.find("input").change(function(){
+    j$(this).parent().toggleClass("active");
+  });
+});
