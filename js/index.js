@@ -130,7 +130,7 @@ var j$ = jQuery,
     $mContainer = j$(".tooltip"),
     $filterButton = j$(".zoneClic"),
     $params = {
-      itemSelector: ".imgExpo",
+      itemSelector: ".item",
       filtersGroupSelector:".filters"
     // Uncomment below to set the selectorType to use <ul> instead of inputs
     // selectorType: "list"
@@ -141,7 +141,7 @@ j$(window).load(function() {
   // Do mansonry with filtering 
   $mContainer.multipleFilterMasonry($params);
   // Show articles with fadein
-  $mContainer.find("imgExpo").animate({
+  $mContainer.find("item").animate({
       "opacity":1
     }, 1200);
   // Hide loading message
